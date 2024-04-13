@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* margin: 10px 100px; */
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    gap: 30px; 
+}
+.nav a
+{
+     padding: 20px 20px; 
+    text-decoration: none;
+    font-size: 25px;
+    color: brown;
+    border-radius: 20px;
+    color: aliceblue;
+}
+header .nav a.active
+{   
+background-color: aqua;
+border: none;
+}
+header .nav a:hover
+{
+    background-color: aqua;
+}
+.nav:hover > a:not(:hover)
+{
+   background: none; 
+}
+.home
+{
+
+    display: flex;
+          height: 90vh;
+    background: linear-gradient(rgb(47, 134, 241),rgba(222, 74, 11, 0.867) );
+}
+.home img{
+    position: absolute;
+    bottom:0;
+    height: 60%;
+    pointer-events: none;
+    width: 100%;
+}
+.home .detail{
+    position: absolute;
+    height: 400px;
+    width: 900px;
+    background: rgba(247, 247, 246, 0.311);
+    /* background: rgb(119, 116, 115); */
+    box-shadow: 0 0 15px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+
+
+}
+.home .detail h2
+{
+    font-size: 90px;
+    color: rgb(205, 169, 50);
+    background:linear-gradient(45deg,rgb(43, 43, 190), orange , rgb(228, 159, 39) ,red,blue );
+    /* background: blue; */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.home .detail p
+{
+    color: gold;
+    font-size: 50px;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.content1
+{
+    height: 100vh;
+    background-color:rgba(222, 74, 11, 0.867);
+  
+}
